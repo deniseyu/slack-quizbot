@@ -4,7 +4,6 @@ const _ = require('lodash');
 
 const questionHandler = require('./question-handler');
 const scoreRepo = require('./score-repo');
-const players = [];
 
 function start(slackChannel) {
   scoreRepo.init().then(() => {
